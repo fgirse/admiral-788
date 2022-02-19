@@ -16,8 +16,9 @@ const team = () => {
 
   return (
 <>
+<section className='flec  flex-col items-center justify-between'>
 {/*====================================== wrapper background ==================================================================================================================================*/}
-<div className="mx-auto bg-cover bg-[url('/IllustrMaritim.png')] w-[100vw] h-[333vh] bg-no-repeat bg-center relative z-0 lg;h-[100vh]">
+<div className="mx-auto flex-grow bg-cover bg-[url('/IllustrMaritim.png')] w-[100vw] h-[200vh] bg-no-repeat bg-center relative z-0 lg;h-[100vh]">
 {/*====================================== flex-col==============================================================================================================================*/}   
     <div className='flex flex-col items-center justify-start'>
 
@@ -54,7 +55,7 @@ const team = () => {
 </section>
  </div>
 {/*====================================== wrapper background ende ==================================================================================================================================*/}
-
+</section>
 </>
 
 
