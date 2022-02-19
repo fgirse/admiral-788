@@ -1,0 +1,316 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+                                                                                                                                                            @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Just+Another+Hand&family=Roboto+Condensed:wght@700&display=swap');
+
+                                                                                                                                                            .task-list-item:before {
+                                                                                                                                                              @apply hidden;
+                                                                                                                                                            }
+
+
+
+
+  @font-face {
+    font-family: "AD";
+    font-weight: 700;
+    src: url('../public/fonts/@font-face/4fe422382fca89dfc46c6357500af304.woff') format("woff");
+    src: url('../public/fonts/@font-face/4fe422382fca89dfc46c6357500af304.woff2'), format("woff2");
+    font-display: swap;
+    font-style: normal;    
+  
+}
+
+
+@layer components {
+
+  .headingA {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff ;
+    font-family: "Architects Daughter";
+  }
+  .headingB {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffcc00 ;
+    font-family: "Architects Daughter";
+  }
+  .headingc {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: orange;
+    font-family: "Architects Daughter";
+  }
+  
+  
+  .headingD {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #595959;
+    font-family: "Architects Daughter";
+    font-weight: extrabold;
+  }
+
+  .containerbox {
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    margin-left: -480px;
+    background-color: red;
+  }
+
+  .preload {
+    position: absolute;
+    top: 40vh;
+    left: 450px;
+  }
+ 
+  #timeline_container {
+    position:relative;
+    background-color:#e9e9e9;
+    border: 8px solid #ffffff;
+    opacity: 0;
+  }
+  
+#timeline {
+	color:aliceblue
+}
+
+#timeline .viewport {
+	overflow: hidden;
+	position: relative;
+	background: url('/Hero.png'), no-repeat, contain, 50vw 50vh ;
+}
+
+
+#timeline .viewport .images {
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+  border:1rem solid #ffcc00;
+}
+
+#timeline .viewport .images Image{
+	float: left;
+}
+
+#timeline .milestones {
+	overflow: hidden;
+	position: relative;
+	border-top: 40px solid #cccff00;
+}
+
+#timeline .milestones .content {
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+/* -- Scrollbar -- */
+#timeline .scrollbar{
+	background: transparent url(/scrollbar_background.png) repeat-x 0 0;
+	position: absolute;
+}
+
+#timeline.dragger {
+	background: transparent url(/scrollbar_dragger.png) no-repeat 0 0;
+	cursor: pointer;
+	position: absolute;
+}
+
+#timeline .mark {
+	background: transparent url(/scrollbar_mark.png) no-repeat 0 0;
+	cursor: pointer;
+	height: 21px;
+	width: 13px;
+	left: 600px;
+	position: absolute;
+	display: none;
+	opacity: 0;
+}
+/* -- End Scrollbar -- */
+
+
+
+
+shadow {
+	position: absolute;
+	top: 454px;
+	left: -5px;
+}
+
+
+.images {
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+}
+
+img{
+	float: left;
+}
+/* -- End Viewport -- */
+
+
+#timeline span {
+	display: block;
+}}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  background-color: #565678;
+  font-family: AD;
+}
+
+
+input:-webkit-autofill,
+text:-webkit--text-stroke-color,
+text:-webkit-text-stroke-width,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.container {
+  padding: 4rem 1rem;
+}
+
+.container p {
+  margin: 1.5rem 0;
+}
+
+.card {
+  max-width: 60rem;
+  box-shadow: -10px 10px 80px rgba(255, 255, 255, 0.1);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+
+
+.inlineCode::before,
+.inlineCode::after {
+  content: '`';
+}
+
+.hr {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 1.5rem 0;
+}
+
+.bgWrap {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bgText {
+  margin: 0;
+  line-height: 3rem;
+  text-align: center;
+  padding-top: 10vh;
+  text-shadow: 1px 1px 1px #3c5c5e;
+  color: #ffcc00;
+  font-size: 8rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  font-family: "Architects Daughter";
+}
+.flex-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  }
+
+.flex-item:nth-child(1) {
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  }
+
+.flex-item:nth-child(2) {
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  }
+
+.flex-item:nth-child(3) {
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  }
+
+/*
+  Legacy Firefox implementation treats all flex containers
+  as inline-block elements.
+*/
+
+@-moz-document url-prefix() {
+.flex-container {
+  width: 100%;
+  -moz-box-sizing: border-box;
+  }
+
+}
