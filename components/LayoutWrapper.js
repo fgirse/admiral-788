@@ -7,34 +7,20 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import LogoNeu from'../data/SvgLogoNeu'
 import { PhoneIcon } from '@heroicons/react/solid'
+import InfoBar from '../components/InfoBar';
 import { AtSymbolIcon } from '@heroicons/react/solid';
 import headerNavLinks from '/data/headerNavLinks'
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
       <div className="w-screen flex flex-col justify-between bg-gray-900 h-screen">
-      <header className="flex items-center justify-between lg:py-8">
+        <InfoBar></InfoBar>
+      <header className="flex items-center justify-between lg:py-1">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
-              <div className="flex items-center justify-between">
-                <div className="mr-3">
-                  <LogoNeu />
-                
-                </div>
-                <div className='flex flex-row justify-center'>
-                <PhoneIcon className='hidden lg:block text-yellow-400 w-5 h-5'></PhoneIcon>
-                {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 text-slate-300 hover:text-yellow-400 text-xs lg:block">
-                    {siteMetadata.headerTitle}
-                  </div>
-                ) : (
-                  siteMetadata.headerTitle
-                )}
-              </div>
-              <div className='-mt-3 mr-3 flex bg-slate-900 flex-row justify-start items-start gap-2 p-2'>
-                  <AtSymbolIcon className="text-yellow-400 w-5 h-5"></AtSymbolIcon>
-                   <p className='hidden h-6 text-slate-300 hover:text-yellow-400 text-xs lg:block'>rettungsanker-freiburg@gmx.de</p>   
-                  </div> 
+              <div className="flex items-center justify-end">
+              
+               
                   
                 </div>
               
@@ -42,7 +28,7 @@ const LayoutWrapper = ({ children }) => {
             </Link>
           </div>
           <div className="flex items-center text-base leading-5">
-            <div className="hidden sm:block">
+            <div className="hidden lg:block">
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}

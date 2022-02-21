@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { useState } from 'react'
 import Link from './Link'
 import headerNavLinks from '/data/headerNavLinks'
@@ -18,10 +19,10 @@ const MobileNav = () => {
   }
 
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <button
         type="button"
-        className="w-8 h-8 py-1 ml-1 mr-1 rounded"
+        className="w-8 h-8 py-1 ml-1 mr-5 rounded"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >

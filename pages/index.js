@@ -9,6 +9,9 @@ import Astra from '../components/icons/svg/SVGAstra';
 import Skyline from "../components/icons/svg/SVGSkyline_weiss_3.js"
 import SCLogo from "../components/icons/svg/SCLogo";
 import Image from 'next/image';
+import Modal6 from '../components/Modal6'
+import LightBox from '../components/LightBoxProj'
+import InfoBar from '../components/InfoBar';
 import sketchy from "theme-ui-sketchy-preset"; 
 import { PhoneIcon } from '@heroicons/react/solid';
 import { AtSymbolIcon } from '@heroicons/react/solid';
@@ -66,7 +69,7 @@ export default function Home({ posts }) {
      <SectionContainer>
     <div className="mx-auto bg-slate-900 min-h-screen flex flex-col w-12/12">
 
-<section className="mt-2 mx-auto flex-grow-1 border-t-4 border-b-4 border-amber-400 bg-[url('/Hero3.png')] w-full h-[calc(100vh-25vh)] bg-cover bg-center md:bg-[url('/Hero.png')] md:bg-cover bg-no-repeat md:w-[100vw] md:h-[calc(100vh-11vh-14vh)]">
+<section className="mt-5 mx-auto flex-grow-1 border-t-4 border-b-4 border-amber-400 bg-[url('/Hero3.png')] w-full h-[calc(100vh-44vh)] bg-cover bg-center md:bg-[url('/Hero.png')] md:bg-cover bg-no-repeat md:w-[100vw] md:h-[calc(100vh-11vh-14vh)]">
 
 
 
@@ -94,11 +97,19 @@ export default function Home({ posts }) {
                 <p className="mb-2 text-center text-2xl font-bold tracking-tight text-yellow-500 dark:text-white uppercase md:text-4xl xl:text-5xl">öfffnungzeiten</p>
                 <p className="text-center mt-2 text-xs sm:text-2xl text-gray-300 md:text-base lg:text-xl">Montag-Donnerstag: 18 bis 24 Uhr</p>
                 <p className="text-center text-xs sm:text-2xl md:text-base  text-gray-300 lg:text-xl xl:text-">Freitag und Samstag: 15 bis 03 Uhr</p>
-                <p className=" mb-2 text-center text-sm md:text-xl text-gray-300 lg:text-2xl xl:text-xl">Sonntag: Ruhetag</p>
-        </div>
 
 
 
+
+
+
+
+
+
+ md:file:hidden'>
+
+  <Modal6></Modal6>
+</div>
 
           <div className="mt-5w-10/12 flex flex-col items-center bg-red-900 rounded-2xl border shadow-md md:flex-row lg:w-full  dark:border-gray-700 dark:bg-gray-800 ">
               <img className="p-3" src="/portrait-mick1.png" alt="portrait"/>
@@ -115,16 +126,16 @@ export default function Home({ posts }) {
 
 {/*========================== ENDE SECTION A ===================================================*/}
 <div className='mt-12 flex flex-col md:flex md:flex-row items-baseline'>
-<div className='w-7/12 z-10 mt- md:transform -translate-y-10 md:w-5/12 xl:w-4/12 xl:transform: xl:-translate-y-60'>
+<div className='hidden md:block w-7/12 z-10 mt- md:transform -translate-y-10 md:w-5/12 xl:w-4/12 xl:transform: xl:-translate-y-60'>
         <Image src="/lighthousebw.svg" alt="illustration" layout="responsive" height={473} width={473} />
       </div>
-      <div className='w-5/12  right-7 transform -translate-y-1 md:w-5/12 md:right-16 lg:w-3/12 xl:w-2/12 float-right md:transform md:-translate-y- xl:transforn z-20 xl:-translate-y-[vh]' >
+      <div className='hidden md:block md:w-5/12  right-7 transform -translate-y-1 md:right-16 lg:w-3/12 xl:w-2/12 float-right md:transform md:-translate-y- xl:transforn z-20 xl:-translate-y-[vh]' >
         <Image className='' src="/Astraballons.png" alt="astraballons" layout="responsive" height={2064} width={1739} />
       </div>
-      <div className=' w-2/6 left-24  md:1/12 transform -translate-y-12 md:transform:-md:translate-y-6 lg:w-2/12 xl:transform xl:-translate-y-[0vh]' >
+      <div className='hidden w-2/6 left-24  md:1/12 transform -translate-y-12 md:transform:-md:translate-y-6 lg:w-2/12 xl:transform xl:-translate-y-[0vh]' >
         <Image src="/rettungsring.png" alt="illustration" layout="responsive" height={473} width={473} />
       </div>
-      <div className=' transform -translate-y-12 right w-5/12  md:transform:-translate-y-24 lg:transform lg:w-3/12 lg:-transform: lg:translate-y-0' >
+      <div className='hidden md:block transform -translate-y-12 right w-5/12  md:transform:-translate-y-24 lg:transform lg:w-3/12 lg:-transform: lg:translate-y-0' >
         <Image src="/Graffity_StPauli.png" alt="llustration" layout="responsive" height={473} width={473} />
       </div>
 
@@ -132,7 +143,7 @@ export default function Home({ posts }) {
 </div>
 
   {/*======================================= Section B =======================================================================*/}
-  <section className="hidden md:block xl:-mt-48 xl:p-12">
+  <section className="mt-[84vh] xl:-mt-48 xl:p-12">
   <div className="grid overflow-hidden grid-cols-1 md:grid md:grid-cols-3 grid-rows-2 gap-3">
 	<div className="box"><Image width="619" height="696" src="/bulleye.png" layout="responsive" alt="Bullauge" /></div>
 	<div className="box"><Image width="619" height="696" src="/bulleye.png" layout="responsive" alt="Bullauge" /></div>
@@ -342,7 +353,7 @@ export default function Home({ posts }) {
 
 
    {/*========================================================== section G ende==============================================================*/}  
- 
+              <LightBox width="500" height="400"></LightBox>
  {/*=======================================  Section C =======================================================================*/}
 
     </div>
