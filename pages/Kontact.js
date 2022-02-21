@@ -1,15 +1,17 @@
-import React from 'react';
+
+/* eslint-disable prettier/prettier */import React from 'react';
 import StyledHeroWohin from '../components/HeroWohin';
 import Modal3 from '../components/Modal3.js';
 import Modal4 from '../components/Modal4.js';
 import Image from 'next/image';
+
 export default function Kontact() {
 
     return (
         <>
             {/* Section 1 */}
 
-            <section class=" mx-auto px-2 pt-5 bg-slate-800 md:px-0">
+            <section className=" mx-auto px-2 pt-5 bg-slate-800 md:px-0">
                 <div className="bg-green-100/10 rounded-2xl container items-center max-w-7xl px-8 mx-auto xl:p-3">
                     <div className='py-5 mt-3 lg:mt-5 mx-auto w-11/12 md-7/12 lg:w-3/12 xl:w-3/12 2xl:w-3/12'>
                         <Image className="" src="/LogoAlt.png" layout="responsive" alt="Logo alt" height="280" width="1049" />

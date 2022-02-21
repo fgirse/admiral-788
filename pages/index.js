@@ -69,7 +69,7 @@ export default function Home({ posts }) {
      <SectionContainer>
     <div className="mx-auto bg-slate-900 min-h-screen flex flex-col w-12/12">
 
-<section className="mt-5 mx-auto flex-grow-1 border-t-4 border-b-4 border-amber-400 bg-[url('/Hero3.png')] w-full h-[calc(100vh-44vh)] bg-cover bg-center md:bg-[url('/Hero.png')] md:bg-cover bg-no-repeat md:w-[100vw] md:h-[calc(100vh-11vh-14vh)]">
+<section className="mt-5 mx-auto flex-grow-1 border-t-4 border-b-4 border-amber-400 bg-[url('/Hero3.png')] w-full h-[calc(100vh-44vh)] bg-cover bg-center md:bg-[url('/Hero.png')] md:bg-cover bg-no-repeat md:w-[100vw] md:h-[calc(100vh-13vh-14vh)]">
 
 
 
@@ -97,6 +97,7 @@ export default function Home({ posts }) {
                 <p className="mb-2 text-center text-2xl font-bold tracking-tight text-yellow-500 dark:text-white uppercase md:text-4xl xl:text-5xl">öfffnungzeiten</p>
                 <p className="text-center mt-2 text-xs sm:text-2xl text-gray-300 md:text-base lg:text-xl">Montag-Donnerstag: 18 bis 24 Uhr</p>
                 <p className="text-center text-xs sm:text-2xl md:text-base  text-gray-300 lg:text-xl xl:text-">Freitag und Samstag: 15 bis 03 Uhr</p>
+</div>
 
 
 
@@ -105,9 +106,7 @@ export default function Home({ posts }) {
 
 
 
-
- md:file:hidden'>
-
+ <div className='w-full mx-auto md:hidden'>
   <Modal6></Modal6>
 </div>
 

@@ -15,7 +15,7 @@ const LayoutWrapper = ({ children }) => {
     <SectionContainer>
       <div className="w-screen flex flex-col justify-between bg-gray-900 h-screen">
         <InfoBar></InfoBar>
-      <header className="flex items-center justify-between lg:py-1">
+      <header className="flex items-center justify-between lg:py-3"> 
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-end">
@@ -33,7 +33,7 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-100 sm:p-4 hover:text-yellow-400 hover:border-b hover:border-yellow-400 dark:text-gray-100 2xl:text-2xl dark:hover:text-sky-700"
+                  className="p-1 font-medium text-gray-100 sm:p-4 hover:text-yellow-400 hover:border-b hover:border-yellow-400 dark:text-gray-100 2xl:text-[1.6666rem] 2xl:py-1 dark:hover:text-sky-700"
                 >
                   {link.title}
                 </Link>

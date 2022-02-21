@@ -69,15 +69,14 @@ export default function MyModal5() {
                   as="h3"
                   className="ml-3 headingA inline mt-16 lg:text-stroke-11 text-2xl text-center font-bold leading-6 text-yellow-600 md:text-6xl lg:mt-24 lg:text-5xl"
                 >
-                Dein Event im Rettungsanker 
+               Tisch - Reservation 
                 </Dialog.Title> 
 
              
           
                 <div className="mt-2 lg:mt-1 ">
-                <p className="text-justify p-3 text-gray-100 text-xs lg:text-xl">Der Rettungsanker und seine Räumlichkeiten sind eine ideale Location um Ihre privaten oder geschäftlichen Anlässe wie Geburtstage, Hochzeiten und Verlobungen, aber auch Firmen- oder Belegschaftspartys zu gestalten. Im Rahmen einer "geschlossenen Gesellschaft" steht Ihnen der Rettungsanker mit seinen Räumlichkeiten für Ihre Feierlichkeiten zur Verfügung. Auch können wir Ihnen - falls dies erwünscht - ein vollumfängliches <span className='text-yellow-400 font-bold'>Catering</span> anbieten. Hier sind Ihren Wünschen im Grunde genommen keine Grenzen gesetzt. Unsere Koperationspartner <LogoLeckerladen height="40" width="120"></LogoLeckerladen>sind für ausgezeichnete und ideenreiche Apero-Buffets oder Menues besoders ausgewiesen und werden nichts unversucht lassen Ihre Wünsche und Ideen umzusetzten. 
-                Nähere Informationen zur Planung Ihres Events besprechen wir am sinnvollsten nach <span className='text-yellow-400 font-bold'>Vereinbarung eines persönlichen Termins</span>. Senden Sie uns eine e-mail oder sprechen Sie uns direkt im Rettungsanker an!!! Wir freuen uns Ihre Feierlichkeiten professionell begleiten zu dürfen.<br/><br/>
-                Michael Schreck und das Team Rettungsanker." </p>
+                <p className="text-justify p-3 text-gray-100 text-xs lg:text-xl">Unsere Sportarena mit regelmässigen Live-Übertragungen der Fussball-Bundesliga erfreut sich immer grösserer Belibtheit. Insbesondere zu den Topspieldes SC Freiburg empfehlen wir eine Tischreservation. Mit unserem neuen Booking Tool sichern Sie sich die besten Plätze in der Fussball-Arena... Wir freuen uns auf spannende, torreiche Spiele<br/><br/>
+                Das Team Rettungsanker." </p>
                 </div>
                 <div className="mt-5 flex flex-row justify-evenly gap-5 ">
                   <button

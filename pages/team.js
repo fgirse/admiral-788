@@ -26,7 +26,7 @@ const team = () => {
 <section className="mx-auto w-10/12 py-12 px-6 text-center md:py-4 md:px-4">
 
 <div className="mt-4 flex flex-wrap -mx-24">
-       <div className="-mt-28 p-24 md:w-1/3 xl:p-36">
+       <div className="-mt-28 p-24 md:w-1/3 md:-order-1 xl:p-36">
          <Image className="rounded-full" src="/matrose.jpg" layout="responsive" width="100" height="120" alt="Portrait"/>
          <h3 className="mt-3 text-5xl text-yellow-600 mb-2 font-bold font-heading">Simon</h3>
          <span className="text-2xl text-blue-800 font-bold ">Obermaat</span>

@@ -6,7 +6,7 @@ import axios from "axios";
 import StyledButton from "../components/Buttons/ButtonOrange"
 import React, { useMemo } from "react";
 import { container } from "tailwindcss/defaultTheme";
-
+import Modal6 from '../components/Modal6'
 
 export  default class FetchDataUser extends React.Component {
    
@@ -51,7 +51,7 @@ export  default class FetchDataUser extends React.Component {
 
       <div className="flex flex-col items-center justify-start">
            <p className="mb-5 headingc text-4xl text-center text-white">Tisch reservieren?</p>
-           <StyledButton>Reservation</StyledButton>
+           <Modal6 className="text-4xl"></Modal6>
       </div>  
               <p className="mt-5 mx-auto text-1xl text-gray-200 text-center font-sans xl:text-2xl">Saison vom <span className="text-yellow-500 font-bold" >{this.state.tabelle.startDate}</span> bis <span className="text-yellow-500 font-bold">{this.state.tabelle.endDate}</span></p>
               <p className="mx-auto text-4xl text-gray-200 text-center font-sans xxl:text-4xl">Die Bundesliga</p>
